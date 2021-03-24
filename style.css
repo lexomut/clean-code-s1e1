@@ -132,7 +132,7 @@ li > label {
 }
 
 li > input[type="text"] {
-  width: 226px
+  width: 226px;
 }
 
 li > .task__del:hover {
@@ -151,6 +151,6 @@ li > .task__del:hover {
 
 /* Completed */
 .tasks_completed .task__input {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
