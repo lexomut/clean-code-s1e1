@@ -12,7 +12,7 @@ body {
   text-align: right;
 }
 
-.eisenhower img {
+.eisenhower__img {
   width: 100%;
 }
 
@@ -21,7 +21,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .top {
+  .eisenhower {
     text-align: center;
   }
 }
@@ -37,7 +37,7 @@ body {
   display: inline-block;
 }
 
-ul {
+.tasks {
   margin: 0;
   padding: 0px;
 }
@@ -99,7 +99,7 @@ label[for="add-task__input"] {
   margin: 0 0 20px;
 }
 
-input#add-task__input {
+.add-task__input {
   width: 318px;
 }
 
@@ -133,22 +133,22 @@ li > input[type="text"] {
   width: 226px
 }
 
-li > button.task__del:hover {
+li > .task__del:hover {
   color: #cf2323;
 }
 
-button.task__del img {
+.task__btn-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.task__del img:hover {
+.task__btn-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
-  text-decoration: line-through
+.tasks_completed  .task__input {
+  text-decoration: line-through;
   color: #888;
 }
