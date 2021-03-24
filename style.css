@@ -133,17 +133,17 @@ li > input[type="text"] {
   width: 226px
 }
 
-li > button.task__delete:hover {
+li > button.task__del:hover {
   color: #cf2323;
 }
 
-button.task__delete img {
+button.task__del img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.task__delete img:hover {
+button.task__del img:hover {
   transform: rotateZ(0);
 }
 
