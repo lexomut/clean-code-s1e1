@@ -8,7 +8,7 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput=document.getElementById("add-task__input");//Add a new task.
+var taskInput=document.getElementById("task__text-aria_new");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
 var incompleteTaskHolder=document.getElementById("tasks_incomplete");//ul of #incompleteTasks
 var completedTasksHolder=document.getElementById("tasks_completed");//completed-tasks
@@ -32,7 +32,7 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    label.className='task__input';
+    label.className='task__text';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
@@ -86,10 +86,10 @@ var editTask=function(){
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".task__edit");
     var containsClass=listItem.classList.contains("task_edit-mode");
-    //If class of the parent is .editmode
+    //If class of the parent is .task_edit-mode
     if(containsClass){
 
-        //switch to .editmode
+        //switch to .task_edit-mode
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
@@ -98,8 +98,8 @@ var editTask=function(){
         editBtn.innerText="Save";
     }
 
-    //toggle .editmode on the parent.
-    listItem.classList.toggle("editMode");
+    //toggle .task_edit-mode on the parent.
+    listItem.classList.toggle("task_edit-mode");
 };
 
 

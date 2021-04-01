@@ -34,7 +34,7 @@ body {
   margin: 0 auto 0;
 }
 
-.task__input {
+.task__text {
   width: 56%;
   display: inline-block;
 }
@@ -70,7 +70,7 @@ button:hover {
 
 /* Heading */
 h3,
-label[for="add-task__input"] {
+label[for="task__text-aria_new"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -81,6 +81,7 @@ label[for="add-task__input"] {
 }
 
 input[type="text"] {
+  box-sizing: border-box;
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,12 +99,12 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="add-task__input"] {
+label[for="task__text-aria_new"] {
   display: block;
   margin: 0 0 20px;
 }
 
-.add-task__input {
+.task__text-aria_new {
   width: 318px;
 }
 
@@ -135,6 +136,8 @@ li > label {
 
 li > input[type="text"] {
   width: 226px;
+
+
 }
 
 .task__del:hover {
@@ -152,7 +155,22 @@ li > input[type="text"] {
 }
 
 /* Completed */
-.tasks_completed .task__input {
+.tasks_completed .task__text {
   text-decoration: line-through;
   color: #888;
+}
+
+
+/* Edit Task */
+ul li input[type=text] {
+  display:none
+}
+
+ul li.task_edit-mode input[type=text] {
+  display:inline-block;
+  width:224px
+}
+
+ul li.task_edit-mode label {
+  display:none;
 }
