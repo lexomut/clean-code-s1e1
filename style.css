@@ -165,14 +165,14 @@ button {
 
 /* Edit Task */
 .task .task__text-aria {
-  display:none;
+  display: none;
 }
 
 .task_edit-mode .task__text-aria  {
-  display:inline-block;
+  display: inline-block;
   width:224px;
 }
 
 .task_edit-mode .task__text {
-  display:none;
+  display: none;
 }
